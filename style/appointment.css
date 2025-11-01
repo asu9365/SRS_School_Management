@@ -1,0 +1,136 @@
+/* appointment.css */
+
+/* ===== POPUP STYLING ===== */
+.appointment-popup {
+    display: none; /* Shown dynamically via JS */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 400px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    position: relative;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.popup-content h3 {
+    margin-top: 0;
+    text-align: center;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 1.5rem;
+    color: #888;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.close-btn:hover {
+    color: #e74c3c;
+}
+
+.appointmentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.appointmentForm label {
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 4px;
+}
+
+.appointmentForm input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+.appointmentForm input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.button {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.button input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.button input[type="submit"]:hover {
+    background-color: #2b7bb9;
+}
+
+/* ===== SUCCESS PAGE ===== */
+.success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eef2f7;
+}
+
+.success-card {
+    background: #fff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.success-card h2 {
+    color: #27ae60;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.success-card p {
+    color: #2c3e50;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.success-card a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.success-card a:hover {
+    text-decoration: underline;
+}

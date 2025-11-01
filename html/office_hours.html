@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School & Office Hours</title>
+    <link rel="stylesheet" href="../style/office_hours.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="nav_bar">
+            <div class="container1">
+                <p>St. Robert's High School, Jakhalabandha</p>
+            </div>
+        </div>
+        <div class="footerBar"></div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="body">
+        <section class="head" id="head">
+            <h1 class="heading">School & Office Hours</h1>
+            <div class="con"><hr></div>
+            <div class="hours-container">
+                <!-- School Hours Card -->
+                <div class="hours-card">
+                    <h2>School Hours</h2>
+                    <ul>
+                        <li><strong>Monday to Friday:</strong></li>
+                        <li>Montessori: 8:50 AM – 11:30 AM</li>
+                        <li>Nursery: 8:50 AM – 12:30 PM</li>
+                        <li>Class I to X: 8:50 AM – 2:00 PM</li>
+                        <li>Every 3rd Saturday: School Closed</li>
+                    </ul>
+                </div>
+
+                <!-- Office Hours Card -->
+                <div class="hours-card">
+                    <h2>Office Hours</h2>
+                    <ul>
+                        <li>9:15 AM – 12:00 Noon only</li>
+                        <li>No office work on holidays, Sundays, or during recess on working days.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment Button -->
+        <div class="appointment-btn-container">
+            <button id="openAppointment">Make Appointment</button>
+        </div>
+        <div class="link_homePage">
+            <a href="index.html">Home Page</a>
+        </div>
+
+
+        <!-- Appointment Form Popup -->
+        <div class="appointment-popup" id="appointmentPopup">
+            <div class="popup-content">
+                <span class="close-btn" id="closePopup">&times;</span>
+                <h3>Make Appointment</h3>
+                <div class="details">
+                    <div class="logo">
+                        <!-- <img src="images/Srhs logo.png" alt="School Logo" id="logo"> -->
+                    </div>
+                    <form action="../php/appointment.php" method="post" class="appointmentForm">
+                        <label for="SName">Student Name:</label>
+                        <input type="text" name="SName" id="SName" required>
+
+                        <label for="Class">Class:</label>
+                        <input type="number" name="Class" id="Class" required>
+
+                        <label for="GName">Guardian Name:</label>
+                        <input type="text" name="GName" id="GName" required>
+
+                        <label for="number">Phone Number:</label>
+                        <input type="tel" name="number" id="number" required>
+
+                        <div class="button">
+                            <input type="submit" value="Book Appointment">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer Section -->
+    <div class="footerBar"></div>
+    <footer class="footer">
+        <div>© Copy-Rights Reserved</div>
+        <div>Made as Final Project</div>
+    </footer>
+</body>
+<script>
+    // Get elements
+const openBtn = document.getElementById('openAppointment');
+const popup = document.getElementById('appointmentPopup');
+const closeBtn = document.getElementById('closePopup');
+
+// Open popup
+openBtn.addEventListener('click', () => {
+    popup.style.display = 'flex';
+});
+
+// Close popup
+closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+});
+
+// Close if clicked outside content
+window.addEventListener('click', (e) => {
+    if (e.target == popup) {
+        popup.style.display = 'none';
+    }
+});
+
+</script>
+</html>

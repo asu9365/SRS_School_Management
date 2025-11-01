@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Registration</title>
+    <link rel="stylesheet" href="../style/form_teacher.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="nav_bar">
+            <h2>St. Robert's High School, Jakhalabandha</h2>
+            <span class="pageTitle">Teacher Registration Form</span>
+        </div>
+    </header>
+
+    <!-- FORM BODY -->
+    <main class="form_body">
+        <form action="../php/upload_teacher.php" method="post">
+            <h3>Teacher Details</h3>
+            <hr>
+
+            <!-- Name Section -->
+            <div class="containerName">
+                <label>First Name
+                    <input type="text" name="Fname" placeholder="Enter First Name" required>
+                </label>
+                <label>Middle Name
+                    <input type="text" name="Mname" placeholder="Enter Middle Name">
+                </label>
+                <label>Last Name
+                    <input type="text" name="Lname" placeholder="Enter Last Name" required>
+                </label>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basicInfo">
+                <label>Caste
+                    <input type="text" name="caste" placeholder="Enter Caste">
+                </label>
+                <label>Date of Birth
+                    <input type="date" name="DOB" required>
+                </label>
+                <label>Phone Number
+                    <input type="tel" name="Phone" placeholder="Enter Contact Number" required>
+                </label>
+                <label>Blood Group
+                    <input type="text" name="blood" placeholder="e.g., A+" required>
+                </label>
+            </div>
+
+            <!-- Parent Info -->
+            <div class="parentInfo">
+                <h4>Parents Details</h4>
+                <div class="parent">
+                    <label>Father's Name
+                        <input type="text" name="Ftname" placeholder="Enter Father's Name">
+                    </label>
+                    <label>Contact Number
+                        <input type="tel" name="Fcontact" placeholder="Enter Contact Number">
+                    </label>
+                </div>
+                <div class="parent">
+                    <label>Mother's Name
+                        <input type="text" name="Mtname" placeholder="Enter Mother's Name">
+                    </label>
+                    <label>Contact Number
+                        <input type="tel" name="Mcontact" placeholder="Enter Contact Number">
+                    </label>
+                </div>
+            </div>
+
+            <!-- Address Section -->
+            <div class="address">
+                <h4>Address Details</h4>
+                <label>Village/Town
+                    <input type="text" name="address" placeholder="Enter Village/Town">
+                </label>
+                <label>P.O
+                    <input type="text" name="POaddress" placeholder="Post Office">
+                </label>
+                <label>Pin Code
+                    <input type="number" name="pin" placeholder="Enter Pin">
+                </label>
+                <label>District
+                    <input type="text" name="Dist" placeholder="Enter District">
+                </label>
+                <label>State
+                    <input type="text" name="State" placeholder="Enter State">
+                </label>
+            </div>
+
+            <!-- Qualification and Experience -->
+            <div class="qualification">
+                <h4>Qualification & Experience</h4>
+                <label>Qualification
+                    <textarea name="qualification" rows="4" placeholder="Enter Qualification Details"></textarea>
+                </label>
+                <label>Experience
+                    <textarea name="experience" rows="4" placeholder="Enter Experience Details"></textarea>
+                </label>
+            </div>
+
+            <!-- Class Assigned -->
+            <div class="classAssign">
+                <label>Class Assigned
+                    <input type="number" name="classAssign" placeholder="Enter Class Number">
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="button">
+                <input type="submit" name="submit" value="Submit Registration">
+            </div>
+        </form>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2025 St. Robert's High School | All Rights Reserved</p>
+        <p>Designed as Final Project</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,277 @@
+/* =====================================
+   Global Styles
+===================================== */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f7fa;
+    color: #222a36;
+    margin: 0;
+    padding: 0;
+}
+
+.header .nav_bar {
+    background-color: #214f8a;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.header .nav_bar p {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.footerBar {
+    height: 5px;
+    background: #3eccdf;
+    margin: 0;
+}
+
+/* =====================================
+   Main Section Styles
+===================================== */
+.body {
+    padding: 3em 1.5em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.head .heading {
+    font-size: 2.5em;
+    text-align: center;
+    color: #214f8a;
+    margin-bottom: 0.5em;
+}
+
+.con hr {
+    width: 100px;
+    border: 2px solid #3eccdf;
+    margin: 0.5em auto 2em auto;
+}
+
+/* Hours Cards */
+.hours-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.hours-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(33, 79, 138, 0.2);
+    padding: 2em;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hours-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(33, 79, 138, 0.3);
+}
+
+.hours-card h2 {
+    color: #214f8a;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.hours-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hours-card ul li {
+    margin: 0.6em 0;
+    line-height: 1.4;
+}
+
+
+/* =====================================
+    Appointment Button
+===================================== */
+
+.appointment-btn-container {
+    text-align: center;
+    margin: 2em 0;
+}
+
+#openAppointment {
+    background-color: #214f8a;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Default: hidden */
+#appointmentPopup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+
+/* Show when URL hash matches #appointmentPopup */
+:target {
+    display: flex;
+}
+
+/* Center the title */
+.appointment-popup h3 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: #214f8a;
+    font-size: 1.8em;
+}
+
+#openAppointment:hover {
+    background-color: #3eccdf;
+}
+
+/* Popup Background */
+.appointment-popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup Content */
+.popup-content {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 2em;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(33,79,138,0.3);
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #214f8a;
+}
+
+/* Form Styles */
+.appointmentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.appointmentForm input[type="text"],
+.appointmentForm input[type="number"],
+.appointmentForm input[type="tel"] {
+    padding: 0.7em;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Center the submit button */
+.appointmentForm .button {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    margin-top: 1em;
+}
+
+.appointmentForm .button input[type="submit"] {
+    background-color: #214f8a;
+    color: #fff;
+    border: none;
+    padding: 0.8em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.appointmentForm .button input[type="submit"]:hover {
+    background-color: #3eccdf;
+    padding: 0.8em 2em;
+    font-size: 1em;
+}
+
+/* =====================================
+   Home Page Link Section
+===================================== */
+.link_homePage {
+    text-align: center;
+    margin-top: 2.5em;
+    margin-bottom: 3em;
+}
+
+.link_homePage a {
+    display: inline-block;
+    background-color: #7f9cc3;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+    padding: 0.8em 1.8em;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(33, 79, 138, 0.25);
+    transition: all 0.3s ease-in-out;
+}
+
+.link_homePage a:hover {
+    background-color: #3eccdf;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(62, 204, 223, 0.3);
+}
+
+.link_homePage a:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px rgba(33, 79, 138, 0.2);
+}
+
+
+
+/* =====================================
+   Footer Styles
+===================================== */
+.footer {
+    text-align: center;
+    padding: 1.5em 0;
+    background-color: #214f8a;
+    color: #fff;
+    font-size: 0.95em;
+}
+
+/* =====================================
+   Responsive
+===================================== */
+@media (max-width: 768px) {
+    .hours-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hours-card {
+        width: 90%;
+    }
+}

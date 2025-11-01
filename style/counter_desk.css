@@ -1,0 +1,234 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7fa;
+    color: #222a36;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, #245090, #3eccdf);
+    color: #fff;
+    padding: 1em 2em;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav_bar h2 {
+    font-size: 1.8em;
+}
+
+.role {
+    font-size: 1em;
+    display: block;
+    margin-top: 4px;
+    color: #f0f0f0;
+}
+
+/* BODY */
+.body {
+    max-width: 1200px;
+    margin: 2em auto;
+    text-align: center;
+    position: relative;
+}
+
+.schoolIcon img {
+    height: 120px;
+    width: auto;
+    margin-bottom: 20px;
+    border-radius: 60%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.welcomeMessage h3 {
+    font-size: 1.8em;
+    color: #245090;
+    margin-bottom: 0.5em;
+}
+.welcomeMessage p {
+    font-size: 1em;
+    color: #51768a;
+    margin-bottom: 2em;
+}
+
+/* Search */
+.searchStudent input {
+    padding: 10px 12px;
+    width: 250px;
+    border: 1px solid #245090;
+    border-radius: 6px;
+    margin-right: 8px;
+    font-size: 1em;
+}
+.searchStudent button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #245090;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.searchStudent button:hover {
+    background-color: #3eccdf;
+    color: #000;
+}
+
+/* Quick Actions */
+.counterServices h3 {
+    font-size: 1.5em;
+    margin-bottom: 12px;
+    color: #214f8a;
+}
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+.actions .btn {
+    text-decoration: none;
+    padding: 12px 22px;
+    background-color: #245090;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.actions .btn:hover {
+    background-color: #3eccdf;
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* Notifications */
+.notifications {
+    max-width: 600px;
+    margin: 2em auto;
+    text-align: left;
+    background-color: #fff;
+    padding: 1em 1.5em;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.notifications h4 {
+    margin-bottom: 8px;
+    color: #214f8a;
+}
+.notifications ul li {
+    margin-bottom: 6px;
+    color: #51768a;
+}
+
+/* POPUPS */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(6px);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    animation: fadeIn 0.4s ease;
+}
+.popup {
+    background: #fff;
+    color: #222;
+    border-radius: 12px;
+    padding: 25px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    overflow-y: auto;
+    max-height: 85vh;
+    animation: slideUp 0.4s ease;
+}
+.popup h3 {
+    text-align: center;
+    color: #214f8a;
+    margin-bottom: 12px;
+}
+.close-btn {
+    float: right;
+    font-size: 24px;
+    color: #214f8a;
+    cursor: pointer;
+}
+
+/* Search Table */
+.searchResults table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+.searchResults th, .searchResults td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+.searchResults th {
+    background-color: #214f8a;
+    color: white;
+}
+.searchResults tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.view-btn {
+    background-color: #3eccdf;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.view-btn:hover {
+    background-color: #214f8a;
+    color: white;
+}
+
+/* Details Content */
+.details-content p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    color: #333;
+}
+.details-content p strong {
+    color: #214f8a;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Footer */
+.footer {
+    background-color: #245090;
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    margin-top: 2em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .actions { flex-direction: column; gap: 10px; }
+    .searchStudent input { width: 80%; margin-bottom: 10px; }
+    .popup { width: 95%; padding: 20px; }
+}

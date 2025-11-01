@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management - Login</title>
+    <link rel="stylesheet" href="../style/login.css">
+</head>
+<body class="light" >
+
+    <header class="appointment-header">
+        <div class="container">
+            <h1>St. Robert's High School - Appointment Form</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="office_hours.html">Office Hours</a></li>
+                    <li><a href="../index.html#footer">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
++
+  
+    <h1>Login Form</h1>
+    <form action="../php/connect.php" method="post">
+        <div class="headingsContainer">
+        </div>
+        <div class="mainContainer">
+            <label for="username">Your Username</label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+
+            <label for="ID">Your Id Number</label>
+            <input type="text" placeholder="Enter ID number" name="ID" required>
+
+            <label for="myInput">Password</label>
+            <input type="password" id="myInput" name="password" required>
+
+            <label for="showPass" class="show-pass-label">
+                <input type="checkbox" id="showPass" onclick="togglePassword()"> Show Password
+            </label>
+
+            <button type="submit">Login</button>
+        </div>
+    </form>
+    <script>
+        function togglePassword() {
+            var x = document.getElementById("myInput");
+            x.type = x.type === "password" ? "text" : "password";
+        }
+    </script>
+
+</body>
+</html>

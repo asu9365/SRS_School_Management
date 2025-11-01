@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | St. Robert's High School</title>
+  <link rel="stylesheet" href="../style/gallery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <nav class="nav_bar">
+      <div class="logo">
+        <p><strong>Gallery</strong> | St. Robert's High School</p>
+      </div>
+
+      <div class="categories" id="navLinks">
+        <i class="fa fa-times close-btn" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#campus">Campus</a></li>
+          <li><a href="#staff">Staff</a></li>
+          <li><a href="#faculties">Faculties</a></li>
+          <li><a href="#church">Church</a></li>
+          <li><a href="#students">Students</a></li>
+          <li><a href="#programs">Programs</a></li>
+        </ul>
+        <div class="nav-divider"></div>
+      </div>
+
+      <i class="fa fa-bars menu-btn" onclick="showMenu()"></i>
+    </nav>
+    <div class="footerBar"></div>
+  </header>
+
+  <!-- ================= GALLERY SECTIONS ================= -->
+  <main>
+    <!-- CAMPUS -->
+    <section class="block" id="campus">
+      <h2 class="heading">Campus</h2>
+      <div class="divider"></div>
+      <p class="desc">
+        Our beautiful campus provides a serene environment for learning and growth. 
+        Explore the lush green spaces, modern classrooms, and iconic school buildings.
+      </p>
+      <div class="items">
+        <div class="container">
+          <img src="../images/campus/20210315_121313-01.jpeg" alt="Campus view">
+          <img src="../images/campus/20210315_121919-01.jpeg" alt="School building">
+        </div>
+        <div class="container">
+          <img src="../images/campus/8Z2A35681.jpg" alt="Playground">
+          <img src="../images/campus/IMG_20210520_051628-01.jpeg" alt="School corridor">
+        </div>
+      </div>
+    </section>
+
+    <!-- STAFF -->
+    <section class="block" id="staff">
+      <h2 class="heading">Staff</h2>
+      <div class="divider"></div>
+      <p class="desc">
+        Meet our dedicated staff members who ensure the smooth functioning and discipline of our institution.
+      </p>
+      <div class="items">
+        <div class="container">
+          <img src="../images/Teachers/DSC04519.JPG" alt="Staff group">
+          <img src="../images/Teachers/DSC_9067.JPG" alt="Teacher conference">
+        </div>
+        <div class="container">
+          <img src="../images/Teachers/DSC_9077.JPG" alt="Teachers meeting">
+          <img src="../images/Teachers/DSC_9082.JPG" alt="Staff award ceremony">
+        </div>
+      </div>
+    </section>
+
+    <!-- FACULTIES -->
+    <section class="block" id="faculties">
+      <h2 class="heading">Faculties</h2>
+      <div class="divider"></div>
+      <p class="desc">
+        Our faculties are the pillars of excellence, fostering creativity, discipline, and knowledge.
+      </p>
+      <div class="items">
+        <div class="container">
+          <img src="../images/image/flower2.jpg" alt="Faculty event">
+          <img src="../images/image/night.jpg" alt="Academic building at night">
+        </div>
+        <div class="container">
+          <img src="../images/image/marble1.jpg" alt="Lecture hall">
+          <img src="../images/image/washington.png" alt="Department image">
+        </div>
+      </div>
+    </section>
+
+    <!-- STUDENTS -->
+    <section class="block" id="students">
+      <h2 class="heading">Students</h2>
+      <div class="divider"></div>
+      <p class="desc">
+        Our students are the heart of St. Robert’s. Explore their achievements, events, and joyful campus life.
+      </p>
+      <div class="items">
+        <div class="container">
+          <img src="../images/image/teachers/DSC_8933.JPG" alt="Student program">
+          <img src="../images/image/teachers/DSC_8940.JPG" alt="Students group">
+        </div>
+        <div class="container">
+          <img src="../images/image/teachers/DSC_8951.JPG" alt="School event">
+          <img src="../images/image/teachers/DSC_9005.JPG" alt="Students workshop">
+        </div>
+      </div>
+    </section>
+
+    <!-- CHURCH -->
+    <section class="block" id="church">
+      <h2 class="heading">Church</h2>
+      <div class="divider"></div>
+      <p class="desc">
+        The school chapel offers a peaceful space for reflection and prayer, symbolizing unity and faith.
+      </p>
+      <div class="items">
+        <div class="container">
+          <img src="../images/hostel/IMG20211212103519.jpg" alt="Church interior">
+          <img src="../images/hostel/IMG20211212104117.jpg" alt="Church service">
+        </div>
+        <div class="container">
+          <img src="../images/hostel/IMG20211212104829.jpg" alt="Chapel altar">
+          <img src="../images/hostel/IMG20221216193411.jpg" alt="Christmas celebration">
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section class="block" id="programs">
+      <h2 class="heading">Programs</h2>
+      <div class="divider"></div>
+      <p class="desc">
+        Our extracurricular and academic programs encourage students to discover their passions and talents.
+      </p>
+      <div class="items">
+        <div class="container">
+          <img src="../images/Programs/10Aug029.jpg" alt="Annual function">
+          <img src="../images/Programs/20170909_114809.jpg" alt="Cultural program">
+        </div>
+        <div class="container">
+          <img src="../images/Programs/IMG_2958.JPG" alt="Science exhibition">
+          <img src="../images/Programs/Hou (10).jpg" alt="Sports event">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>© 2025 St. Robert’s High School. All Rights Reserved.</p>
+    <p>BCA Final Year Project <br>Ashish Aind <br> UT-201-300-0004</p>
+  </footer>
+
+  <!-- ================= JS ================= -->
+  <script>
+    const navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-260px";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background-color: #f4f7fa;
+    color: #222a36;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, #245090, #3eccdf);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.header h2 {
+    font-size: 1.8em;
+}
+.pageTitle {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.1em;
+    color: #e0e0e0;
+}
+
+/* FORM BODY */
+.form_body {
+    max-width: 900px;
+    margin: 2em auto;
+    background-color: #fff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+form h3 {
+    text-align: center;
+    color: #214f8a;
+    margin-bottom: 15px;
+}
+
+form hr {
+    border: 1px solid #3eccdf;
+    margin-bottom: 20px;
+}
+
+/* SECTIONS */
+.containerName,
+.basicInfo,
+.parentInfo,
+.address,
+.qualification,
+.classAssign {
+    margin-bottom: 25px;
+}
+
+h4 {
+    color: #245090;
+    margin-bottom: 12px;
+}
+
+/* LABELS & INPUTS */
+label {
+    display: block;
+    margin-bottom: 12px;
+    color: #2a475e;
+}
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #c0d3e2;
+    margin-top: 4px;
+    font-size: 0.95em;
+    transition: border 0.3s;
+}
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #245090;
+}
+
+/* BUTTON */
+.button {
+    text-align: center;
+    margin-top: 20px;
+}
+.button input[type="submit"] {
+    padding: 12px 30px;
+    background-color: #245090;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.button input[type="submit"]:hover {
+    background-color: #3eccdf;
+    color: #000;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #214f8a;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+    .form_body {
+        padding: 20px 15px;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="date"],
+    textarea {
+        font-size: 0.9em;
+    }
+}

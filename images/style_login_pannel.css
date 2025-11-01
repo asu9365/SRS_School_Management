@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+}
+
+.header {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.694), rgba(0, 0, 0, 0.64)), url(image/flower1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+}
+
+.body {
+    border: 1px solid rgba(0, 0, 0, 0.935);
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.702);
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.header h1 {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 35px;
+}
+
+.header h2 {
+    text-align: center;
+    padding-top: 5px;
+    font-size: 24px;
+}
+
+.pannel {
+    max-width: auto;
+    margin: 5% 5%;
+    padding-top: 15px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+input {
+    height: 30px;
+    width: 100%;
+    background: rgba(41, 38, 41, 0.489);
+    border: transparent;
+    border-bottom: 3px solid rgba(35, 35, 147, 0.607);
+    ;
+    color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 0 10px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.btn a {
+    color: rgb(255, 255, 255);
+    background-color: rgba(72, 72, 246, 0.708);
+    text-decoration: none;
+    /* border-style: none; */
+    border: 1px solid rgba(35, 18, 187, 0.85);
+    border-radius: 4px;
+    padding: 5px 30px;
+    transition: 1s;
+}
+
+.btn a:hover {
+    background-color: rgb(5, 15, 203);
+    border: 1px rgb(86, 54, 231);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.forget-pass {
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.forget-pass a {
+    text-decoration: none;
+}
+
+@media(max-width:800px) {
+    div.body {
+        margin-top: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}

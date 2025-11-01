@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Desk || Student</title>
+    <link rel="stylesheet" href="../style/counter_desk.css">
+</head>
+
+<body>
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <nav class="nav_bar">
+            <div class="container1">
+                <h2>St. Robert's High School</h2>
+                <span class="role">Counter Desk || Student</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================= BODY ================= -->
+    <main class="body">
+        <div class="schoolIcon">
+            <img src="../images/Srhs logo.png" alt="School Logo">
+        </div>
+
+        <!-- Welcome Section -->
+        <div class="welcomeMessage">
+            <h3>Welcome to the Student Counter Desk</h3>
+            <p>Manage student records, appointments, and teacher details efficiently.</p>
+        </div>
+
+        <!-- Search Student -->
+        <div class="searchStudent">
+            <form action="../php/search.php" method="post">
+                <input type="text" name="name" id="name" placeholder="Enter Student Name" required>
+                <input type="submit" id="Search" name="Search" value="Search">
+            </form>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="counterServices">
+            <h3>Quick Actions</h3>
+            <div class="actions">
+                <a href="form_student.html" class="btn">Add Student</a>
+                <a href="form_teacher.html" class="btn">Add Teacher</a>
+                <a href="../php/show_teachers.php" class="btn">Our Teachers</a>
+                <a href="../php/show_appointments.php" class="btn">Appointments</a>
+                <a href="/" class="btn">New Forms</a>
+            </div>
+        </div>
+
+        <!-- Notifications (optional) -->
+        <div class="notifications">
+            <h4>Notifications</h4>
+            <ul>
+                <li>No pending appointments</li>
+                <li>2 students to verify</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        &copy; 2025 St. Robert's High School | All Rights Reserved
+    </footer>
+</body>
+
+</html>
