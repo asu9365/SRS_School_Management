@@ -13,3 +13,12 @@ if ($conn->connect_error) {
 }
 // echo "✅ Connected successfully";
 ?>
+
+<!-- 
+
+$servername = "sql302.infinityfree.com";
+$username = "if0_40311218";
+$password = "3Er8RLVC9MSo";
+$database = "if0_40311218_school_management"; 
+
+-->
