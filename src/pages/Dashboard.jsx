@@ -147,34 +147,22 @@ export default function Dashboard({ auth }) {
           <div style={styles.dataPanel}>
             <div className="glass-card" style={styles.tabsCard}>
               {/* Tab Navigation */}
-              <div style={styles.tabHeaders}>
+              <div className="tab-headers">
                 <button 
                   onClick={() => setActiveTab('students')} 
-                  style={{
-                    ...styles.tabHeaderBtn, 
-                    color: activeTab === 'students' ? 'var(--primary)' : 'var(--text-secondary)',
-                    borderBottomColor: activeTab === 'students' ? 'var(--primary)' : 'transparent'
-                  }}
+                  className={`tab-btn ${activeTab === 'students' ? 'active' : ''}`}
                 >
                   <Users size={16} /> Students Directory
                 </button>
                 <button 
                   onClick={() => setActiveTab('appointments')} 
-                  style={{
-                    ...styles.tabHeaderBtn, 
-                    color: activeTab === 'appointments' ? 'var(--primary)' : 'var(--text-secondary)',
-                    borderBottomColor: activeTab === 'appointments' ? 'var(--primary)' : 'transparent'
-                  }}
+                  className={`tab-btn ${activeTab === 'appointments' ? 'active' : ''}`}
                 >
                   <Calendar size={16} /> Appointments
                 </button>
                 <button 
                   onClick={() => setActiveTab('teachers')} 
-                  style={{
-                    ...styles.tabHeaderBtn, 
-                    color: activeTab === 'teachers' ? 'var(--primary)' : 'var(--text-secondary)',
-                    borderBottomColor: activeTab === 'teachers' ? 'var(--primary)' : 'transparent'
-                  }}
+                  className={`tab-btn ${activeTab === 'teachers' ? 'active' : ''}`}
                 >
                   <BookOpen size={16} /> Teachers Directory
                 </button>

@@ -369,7 +369,6 @@ const styles = {
   },
   featureGrid: {
     display: 'grid',
-    gridTemplateColumns: 'repeat(3, 1fr)',
     boxShadow: '0 15px 40px rgba(0,0,0,0.1)',
   },
   featureCard: {

@@ -1,0 +1,138 @@
+========================================================================
+ST. ROBERT'S HIGH SCHOOL PORTAL — PROJECT SUMMARY
+========================================================================
+
+1. OVERVIEW & PURPOSE
+------------------------------------------------------------------------
+This project is a modernized, full-stack school management system and portal
+for St. Robert's High School (SRHS), located in Jakhalabandha, Nagaon, Assam.
+It serves two primary roles:
+  A. A premium, modern, responsive public-facing school website for 
+     students, parents, and community members.
+  B. An administrative "Counter Desk" portal that allows authorized school
+     officers (Admins, Clerks, Principals, etc.) to manage student details,
+     teacher registrations, and parent-teacher appointments.
+
+The application connects a React single-page frontend to a PHP REST-style 
+API backend powered by a MySQL/MariaDB database.
+
+
+2. TECHNICAL STACK & TOOLS
+------------------------------------------------------------------------
+* FRONTEND:
+  - React 18.3.1 (Single-Page Application)
+  - Vite 5 (Build tool & development server)
+  - React Router DOM v6 (Client-side routing)
+  - Lucide React (Vector icons library)
+
+* FRONTEND STYLING:
+  - Vanilla CSS design system (src/index.css) utilizing custom CSS variables
+    for color palettes (Dark Navy + Orange accents), border-radii, spacing,
+    box-shadows, animations, and typography (Outfit & Inter Google Fonts).
+  - Modern UI elements featuring glassmorphism cards and smooth transitions.
+  - Full mobile responsiveness utilizing custom CSS classes (responsive-flex,
+    responsive-sticky, tab-headers, and gallery-tabs) without heavy external
+    frameworks like Tailwind CSS.
+
+* BACKEND:
+  - PHP 8.1+ (RESTful API endpoints)
+  - mysqli (MySQL database extension)
+  - Handles cross-origin requests (CORS headers) and outputs standardized JSON data.
+  - Safe error handling: DB connection wrapped in nested try-catch blocks to prevent
+    PHP 8.1+ strict exception crashes.
+
+* DATABASE:
+  - MySQL / MariaDB (via XAMPP)
+  - Active Port: 3306
+  - Database name: school_management
+  - Database Schema (database/schema.sql) defines and seeds 4 key tables:
+    - login_credentials: User accounts with password-based authentication.
+    - students: Student profiles, grades, parent details, and addresses.
+    - teachers: Teacher qualifications, experience, and class assignments.
+    - appointments: Parent-teacher interaction schedules.
+
+* INTEGRATED SERVERS (DEVELOPMENT):
+  - Vite Dev Server: Listening on http://localhost:5173/
+  - Apache Web Server (XAMPP): Listening on http://localhost:8080/
+  - Vite Proxy: Proxies all frontend requests starting with `/api` to the backend
+    Apache address `http://localhost:8080/SRS_Project/api/`.
+
+
+3. DIRECTORY STRUCTURE
+------------------------------------------------------------------------
+SRS_Project/
+│
+├── api/                             # PHP API endpoints
+│   ├── db.php                       # Resilient MySQL connection handler (port 3306)
+│   ├── login.php                    # Authenticates users (admin/clerk/principal/etc.)
+│   ├── students.php                 # GET (search/list) & POST (register) students
+│   ├── teachers.php                 # GET (search/list) & POST (register) teachers
+│   └── appointment.php              # GET (list) & POST (book appointment)
+│
+├── database/                        # Database scripts
+│   └── schema.sql                   # SQL definition and seed values
+│
+├── dist/                            # Production build output
+│
+├── images/                          # School static image assets
+│   ├── campus/                      # School buildings & grounds photos
+│   ├── Teachers/                    # Faculty portrait files
+│   └── Srhs logo.png                # Transparent school emblem
+│
+├── src/                             # React SPA Frontend Source
+│   ├── main.jsx                     # SPA entry point
+│   ├── App.jsx                      # App component with route navigation maps
+│   ├── index.css                    # Custom CSS variables, components, and animations
+│   │
+│   ├── components/                  # Shared components
+│   │   ├── Navbar.jsx               # Sticky responsive header with topbar and mobile toggle
+│   │   ├── Footer.jsx               # School info footer (responsive layouts)
+│   │   └── Toast.jsx                # Floating toast notifications for feedback
+│   │
+│   └── pages/                       # Application Pages
+│       ├── Home.jsx                 # Modern landing page (hero banner, facilities, testimonials)
+│       ├── About.jsx                # School history, quick facts, and infrastructure
+│       ├── Gallery.jsx              # Filtered school image viewer with lightbox modal
+│       ├── Staff.jsx                # Faculty cards merging static files with API records
+│       ├── OfficeHours.jsx          # Administration schedule & booking appointments
+│       ├── Login.jsx                # User sign-in screen
+│       ├── Dashboard.jsx            # Tabbed administrative panel with registry tables
+│       ├── StudentForm.jsx          # Register student with real-time card preview
+│       └── TeacherForm.jsx          # Register teacher with real-time card preview
+│
+├── vite.config.js                   # Vite config and API proxy maps
+├── index.html                       # Base HTML wrapper (SEO meta tags, description, icon)
+├── package.json                     # Node project package configurations
+└── project_summary.txt              # Project summary and tools explanation (this file)
+
+
+4. CORE FUNCTIONALITIES & PAGES
+------------------------------------------------------------------------
+* NAVIGATION & HEADER:
+  - Sticky header bar that changes opacity on scroll.
+  - Dynamic Top Utility Bar containing social media anchors and school details,
+    hidden automatically on mobile viewports.
+  - Accessible mobile slide-out menu drawer that handles click navigation.
+
+* PUBLIC SCHOOL WEBSITE:
+  - Home: Hero banner with CTA buttons, floating cards for key metrics, stats
+    counter (25+ Years, 14 Staff, 10 Grades, 14 Computers), facility layout,
+    faculty showcases, student testimonials, and a footer banner.
+  - About: Rich historical timeline, interactive "Glance" cards, structural
+    facility list, and a flex-stacked physical location card.
+  - Gallery: Categorized view filters (All, Campus, Classes, Programs, Activities)
+    that wrap fluidly, plus an overlays lightbox modal with max-image viewing.
+  - Staff: Faculty profiles containing credentials, qualification badges,
+    experience tags, and personal quote blocks.
+  - Office Hours: Detailed schedules and an interactive appointment booking
+    modal mapping directly to the MySQL database.
+
+* ADMINISTRATION PLATFORM (COUNTER DESK):
+  - Login: Authentication system using credentials stored in MySQL, providing
+    role-based session tokens in LocalStorage.
+  - Dashboard: Real-time statistic counters, search filters, and tabular displays
+    for Students, Teachers, and Appointments, plus a detailed modal overlay.
+    Responsive switcher tabs stack vertically with highlights on small screens.
+  - Forms: Student/Teacher registers featuring clean columns and floating
+    interactive side-previews that automatically adapt on mobile viewports.
+========================================================================

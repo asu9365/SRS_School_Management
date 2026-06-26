@@ -1,0 +1,448 @@
+﻿<USER_REQUEST>
+go througn the project.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-06-23T08:32:42+05:30.
+
+The user's current state is as follows:
+Active Document: d:\XAMPP\htdocs\SRS_Project\src\main.jsx (LANGUAGE_JAVASCRIPT)
+Cursor is on line: 1
+Other open documents:
+- d:\XAMPP\htdocs\SRS_Project\src\pages\StudentForm.jsx (LANGUAGE_JAVASCRIPT)
+- d:\XAMPP\htdocs\SRS_Project\src\pages\Dashboard.jsx (LANGUAGE_JAVASCRIPT)
+- d:\XAMPP\htdocs\SRS_Project\vite.config.js (LANGUAGE_JAVASCRIPT)
+- d:\XAMPP\htdocs\SRS_Project\database\schema.sql (LANGUAGE_SQL)
+- d:\XAMPP\htdocs\SRS_Project\src\main.jsx (LANGUAGE_JAVASCRIPT)
+</ADDITIONAL_METADATA>
+<USER_SETTINGS_CHANGE>
+The user changed setting `Model Selection` from None to Claude Opus 4.6 (Thinking). No need to comment on this change if the user doesn't ask about it. If reporting what model you are, please use a human readable name instead of the exact string.
+</USER_SETTINGS_CHANGE>
+<USER_REQUEST>
+fix the current error
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-06-23T08:35:36+05:30.
+
+The user's current state is as follows:
+Active Document: d:\XAMPP\htdocs\SRS_Project\src\pages\Staff.jsx (LANGUAGE_JAVASCRIPT)
+Cursor is on line: 9
+Other open documents:
+- d:\XAMPP\htdocs\SRS_Project\src\pages\Staff.jsx (LANGUAGE_JAVASCRIPT)
+- d:\XAMPP\htdocs\SRS_Project\package.json (LANGUAGE_JSON)
+- d:\XAMPP\htdocs\SRS_Project\vite.config.js (LANGUAGE_JAVASCRIPT)
+- d:\XAMPP\htdocs\SRS_Project\src\index.css (LANGUAGE_CSS)
+- d:\XAMPP\htdocs\SRS_Project\api\teachers.php (LANGUAGE_PHP)
+</ADDITIONAL_METADATA>
+<USER_REQUEST>
+[plugin:vite:react-babel] D:\XAMPP\htdocs\SRS_Project\src\pages\Staff.jsx: Unexpected token, expected "," (8:162)
+  11 |     { Name: "Mam Knisha Kullu", qualification: "B.Ed", experience: "7 Years", role: "Assistant Teacher", address: "Jakhalabandha", Phone: "67896854789", message: "Great teachers inspire, encourage, and empower.", image: "/images/Teachers/DSC_9076.JPG" },
+D:/XAMPP/htdocs/SRS_Project/src/pages/Staff.jsx:8:162
+6  |  
+7  |    const staticStaff = [
+8  |      { Name: "Sir Manohar K.", qualification: "B.Ed", experience: "7 Years", role: "Assistant Teacher", address: "Jakhalabandha", Phone: "67896854789", message: ""Teaching is a lifelong journey of learning and inspiring others."", image: "/images/Teachers/DSC_9067.JPG" },
+   |                                                                                                                                                                    ^
+9  |      { Name: "Sir Kanchan", qualification: "B.Ed", experience: "7 Years", role: "Assistant Teacher", address: "Jakhalabandha", Phone: "67896854789", message: ""Education is the light that guides us through life's challenges."", image: "/images/Teachers/DSC_9068.JPG" },
+10 |      { Name: "Sir Umesh S.", qualification: "B.Ed", experience: "7 Years", role: "Assistant Teacher", address: "Jakhalabandha", Phone: "67896854789", message: ""A good teacher ignites curiosity that lasts a lifetime."", image: "/images/Teachers/DSC_9075.JPG" },
+    at constructor (D:\XAMPP\htdocs\SRS_Project\node_modules\@babel\parser\lib\index.js:365:19)
+    at JSXParserMixin.raise (D:\XAMPP\htdocs\SRS_Project\node_modules\@babel\parser\lib\index.js:6616:19)
+    at JSXParserMixin.unexpected (D:\XAMPP\htdocs\SRS_Project\node_modules\@babel\parser\lib\index.js:6636:16)
+    at JSXParserMixin.expect (D:\XAMPP\htdocs\SRS_Project\node_modules\@babel\parser\lib\index.js:6916:12)
+    at JSXParserMixin.parseObjectLike (D:\XAMPP\htdocs\SRS_Project\node_modules\@babel\parser\lib\index.js:11839:14)
+    at JSXParserMixin.parseExprAtom (D:\XAMPP\htdocs\SRS_Project\node_modules\@babel\parser\lib\index.js:11356:23)
+    at JSXParserMixin.parseExprAtom (D:\XAMPP\htdocs\SRS_Project\node_modules\@babel\parser\lib\index.js:4776:20)
+    at JSXParserMixin.parseExprSubscripts (D:\XAMPP\htdocs\SRS_Project\node_modules\@babel\parser\lib\index.js:11098:23)
+    at JSXParserMixin.parseUpdate (D:\XAMPP\htdocs\SRS_Project\node_modules\@babel\parser\lib\index
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-06-23T08:41:34+05:30.
+
+The user's current state is as follows:
+Active Document: d:\XAMPP\htdocs\SRS_Project\src\pages\Staff.jsx (LANGUAGE_JAVASCRIPT)
+Cursor is on line: 9
+Other open documents:
+- d:\XAMPP\htdocs\SRS_Project\src\pages\Staff.jsx (LANGUAGE_JAVASCRIPT)
+- d:\XAMPP\htdocs\SRS_Project\src\main.jsx (LANGUAGE_JAVASCRIPT)
+Browser State:
+  Page 686207D667C50CE02D8D1905E1A33C0B (AssamCareer.com â€“ Jobs In Assam, Guwahati and North East India) - https://www.assamcareer.com/
+    Viewport: 1036x751, Page Height: 8325
+  Page 3F24A93370E741257CB5E6208A6ED11D (St. Robert's High School Portal) - http://localhost:5173/staff [ACTIVE]
+    Viewport: 1036x751, Page Height: 751
+</ADDITIONAL_METADATA>
+<USER_REQUEST>
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+VM5:58 Warning: Unsupported style property @media (max-width: 768px). Did you mean @media (maxWidth: 768px)?
+    at div
+    at footer
+    at Footer
+    at div
+    at Router (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=7d467a56:4533:15)
+    at BrowserRouter (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=7d467a56:5271:5)
+    at App (http://localhost:5173/src/App.jsx?t=1782184369121:32:27)
+console.<computed> @ VM5:58
+printWarning @ chunk-BCXODTBQ.js?v=7d467a56:519
+error @ chunk-BCXODTBQ.js?v=7d467a56:503
+warnHyphenatedStyleName @ chunk-BCXODTBQ.js?v=7d467a56:2526
+warnValidStyle @ chunk-BCXODTBQ.js?v=7d467a56:2565
+setValueForStyles @ chunk-BCXODTBQ.js?v=7d467a56:2609
+setInitialDOMProperties @ chunk-BCXODTBQ.js?v=7d467a56:7433
+setInitialProperties @ chunk-BCXODTBQ.js?v=7d467a56:7593
+finalizeInitialChildren @ chunk-BCXODTBQ.js?v=7d467a56:8343
+completeWork @ chunk-BCXODTBQ.js?v=7d467a56:16291
+completeUnitOfWork @ chunk-BCXODTBQ.js?v=7d467a56:19222
+performUnitOfWork @ chunk-BCXODTBQ.js?v=7d467a56:19204
+workLoopSync @ chunk-BCXODTBQ.js?v=7d467a56:19135
+renderRootSync @ chunk-BCXODTBQ.js?v=7d467a56:19114
+performConcurrentWorkOnRoot @ chunk-BCXODTBQ.js?v=7d467a56:18676
+workLoop @ chunk-BCXODTBQ.js?v=7d467a56:195
+flushWork @ chunk-BCXODTBQ.js?v=7d467a56:174
+performWorkUntilDeadline @ chunk-BCXODTBQ.js?v=7d467a56:382
+VM5:58 âš ï¸ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+console.<computed> @ VM5:58
+warnOnce @ react-router-dom.js?v=7d467a56:4425
+logDeprecation @ react-router-dom.js?v=7d467a56:4428
+logV6DeprecationWarnings @ react-router-dom.js?v=7d467a56:4431
+(anonymous) @ react-router-dom.js?v=7d467a56:5295
+commitHookEffectListMount @ ch
+<truncated 3554 bytes>
+able in nature and is not using school building as a shift-school. English is the medium of instructions in this school. This school is approachable by all weather road. In this school academic session starts in April.
+         The school has Private building. It has got 13 classrooms for instructional purposes. All the classrooms are in good condition. It has 2 other rooms for non-teaching activities. The school has a separate room for Head master/Teacher. The school has Pucca boundary wall. The school has have electric connection. The source of Drinking Water in the school is Tap Water and it is functional. The school has 1 boys toilet and it is functional. and 1 girls toilet and it is functional. The school has a playground. The school has a library . The school does not need ramp for disabled children to access classrooms. The school has 14 computers for teaching and learning purposes and all are functional. The school is having a computer aided learning lab. The school is Not Applicable providing mid-day meal."
+
+for now do this.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-06-23T08:52:18+05:30.
+
+The user's current state is as follows:
+Active Document: d:\XAMPP\htdocs\SRS_Project\src\pages\Staff.jsx (LANGUAGE_JAVASCRIPT)
+Cursor is on line: 11
+Other open documents:
+- d:\XAMPP\htdocs\SRS_Project\src\pages\Staff.jsx (LANGUAGE_JAVASCRIPT)
+- d:\XAMPP\htdocs\SRS_Project\src\main.jsx (LANGUAGE_JAVASCRIPT)
+Browser State:
+  Page 3F24A93370E741257CB5E6208A6ED11D (St. Robert's High School Portal) - http://localhost:5173/office-hours
+    Viewport: 982x776, Page Height: 1233
+  Page D4A603E8D4E2790CC6CB0F15F4D4F866 (st roberts school jakhalabandha - Google Search) - https://www.google.com/search?q=st+roberts+school+jakhalabandha&oq=st+roberts+sc... [ACTIVE]
+    Viewport: 1536x776, Page Height: 2301
+  Page 686207D667C50CE02D8D1905E1A33C0B (AssamCareer.com â€“ Jobs In Assam, Guwahati and North East India) - https://www.assamcareer.com/
+    Viewport: 1036x751, Page Height: 8325
+</ADDITIONAL_METADATA>
+Comments on artifact URI: file:///c%3A/Users/ashish/.gemini/antigravity-ide/brain/42a75bd1-3e15-426b-b714-053137d1d7c6/implementation_plan.md
+
+The user has approved this document.
+
+
+<USER_REQUEST>
+
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-06-23T08:54:43+05:30.
+
+The user's current state is as follows:
+Active Document: d:\XAMPP\htdocs\SRS_Project\src\pages\Staff.jsx (LANGUAGE_JAVASCRIPT)
+Cursor is on line: 11
+Other open documents:
+- d:\XAMPP\htdocs\SRS_Project\src\pages\Staff.jsx (LANGUAGE_JAVASCRIPT)
+- d:\XAMPP\htdocs\SRS_Project\src\main.jsx (LANGUAGE_JAVASCRIPT)
+Browser State:
+  Page 686207D667C50CE02D8D1905E1A33C0B (AssamCareer.com â€“ Jobs In Assam, Guwahati and North East India) - https://www.assamcareer.com/
+    Viewport: 1036x751, Page Height: 8325
+  Page 3F24A93370E741257CB5E6208A6ED11D (St. Robert's High School Portal) - http://localhost:5173/office-hours
+    Viewport: 982x776, Page Height: 1233
+  Page D4A603E8D4E2790CC6CB0F15F4D4F866 (st roberts school jakhalabandha - Google Search) - https://www.google.com/search?q=st+roberts+school+jakhalabandha&oq=st+roberts+sc... [ACTIVE]
+    Viewport: 1536x776, Page Height: 2301
+</ADDITIONAL_METADATA>
+<USER_REQUEST>
+continue
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-06-23T09:09:22+05:30.
+
+The user's current state is as follows:
+Active Document: d:\XAMPP\htdocs\SRS_Project\src\pages\Staff.jsx (LANGUAGE_JAVASCRIPT)
+Cursor is on line: 11
+Other open documents:
+- d:\XAMPP\htdocs\SRS_Project\src\pages\Staff.jsx (LANGUAGE_JAVASCRIPT)
+- d:\XAMPP\htdocs\SRS_Project\src\main.jsx (LANGUAGE_JAVASCRIPT)
+Browser State:
+  Page 686207D667C50CE02D8D1905E1A33C0B (AssamCareer.com â€“ Jobs In Assam, Guwahati and North East India) - https://www.assamcareer.com/
+    Viewport: 1036x751, Page Height: 8325
+  Page 3F24A93370E741257CB5E6208A6ED11D (St. Robert's School | Jakhalabandha, Nagaon, Assam) - http://localhost:5173/about [ACTIVE]
+    Viewport: 1536x776, Page Height: 3506
+  Page D4A603E8D4E2790CC6CB0F15F4D4F866 (st roberts school jakhalabandha - Google Search) - https://www.google.com/search?q=st+roberts+school+jakhalabandha&oq=&gs_lcrp=EgZj...
+    Viewport: 1536x776, Page Height: 2301
+  Page 84B4D0E8BE3938A6E9CC948AE7BE157B (St. Robert's School | Jakhalabandha, Nagaon, Assam) - http://localhost:5173/staff
+    Viewport: 1536x776, Page Height: 2851
+</ADDITIONAL_METADATA>
+<USER_SETTINGS_CHANGE>
+The user changed setting `Model Selection` from Claude Opus 4.6 (Thinking) to Gemini 3.5 Flash (Medium). No need to comment on this change if the user doesn't ask about it. If reporting what model you are, please use a human readable name instead of the exact string.
+</USER_SETTINGS_CHANGE>
+<USER_REQUEST>
+Continue
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-06-23T09:20:49+05:30.
+
+The user's current state is as follows:
+Active Document: d:\XAMPP\htdocs\SRS_Project\src\pages\Staff.jsx (LANGUAGE_JAVASCRIPT)
+Cursor is on line: 11
+Other open documents:
+- d:\XAMPP\htdocs\SRS_Project\src\pages\Staff.jsx (LANGUAGE_JAVASCRIPT)
+- d:\XAMPP\htdocs\SRS_Project\src\main.jsx (LANGUAGE_JAVASCRIPT)
+Browser State:
+  Page D4A603E8D4E2790CC6CB0F15F4D4F866 (st roberts school jakhalabandha - Google Search) - https://www.google.com/search?q=st+roberts+school+jakhalabandha&oq=&gs_lcrp=EgZj...
+    Viewport: 1536x776, Page Height: 2301
+  Page 84B4D0E8BE3938A6E9CC948AE7BE157B (St. Robert's School | Jakhalabandha, Nagaon, Assam) - http://localhost:5173/staff
+    Viewport: 1536x776, Page Height: 2851
+  Page 686207D667C50CE02D8D1905E1A33C0B (AssamCareer.com â€“ Jobs In Assam, Guwahati and North East India) - https://www.assamcareer.com/
+    Viewport: 1036x751, Page Height: 8325
+  Page 3F24A93370E741257CB5E6208A6ED11D (St. Robert's School | Jakhalabandha, Nagaon, Assam) - http://localhost:5173/office-hours [ACTIVE]
+    Viewport: 412x915, Page Height: 2149
+</ADDITIONAL_METADATA>
+<USER_REQUEST>
+now make it full UI respopnsive, as it small screens there is some mistakes, also in buttons when hover the text dissapperes.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-06-23T10:03:59+05:30.
+
+The user's current state is as follows:
+Active Document: d:\XAMPP\htdocs\SRS_Project\plan.md (LANGUAGE_MARKDOWN)
+Cursor is on line: 1
+Other open documents:
+- d:\XAMPP\htdocs\SRS_Project\src\main.jsx (LANGUAGE_JAVASCRIPT)
+- d:\XAMPP\htdocs\SRS_Project\plan.md (LANGUAGE_MARKDOWN)
+- d:\XAMPP\htdocs\SRS_Project\package-lock.json (LANGUAGE_JSON)
+- d:\XAMPP\htdocs\SRS_Project\src\pages\Staff.jsx (LANGUAGE_JAVASCRIPT)
+Browser State:
+  Page 6C1A15888F25CE8362464F4A7EEF6CA9 (Google) - https://www.google.com/
+    Viewport: 1536x742, Page Height: 742
+  Page DBCDA18A4EDF6420249E8601F21094C9 (React Developer Tools - Chrome Web Store) - https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadoplj...
+    Viewport: 1536x776, Page Height: 2726
+  Page 686207D667C50CE02D8D1905E1A33C0B (AssamCareer.com â€“ Jobs In Assam, Guwahati and North East India) - https://www.assamcareer.com/
+    Viewport: 1036x751, Page Height: 8325
+  Page 3F24A93370E741257CB5E6208A6ED11D (St. Robert's School | Jakhalabandha, Nagaon, Assam) - http://localhost:5173/login
+    Viewport: 412x915, Page Height: 1818
+  Page D4A603E8D4E2790CC6CB0F15F4D4F866 (st roberts school jakhalabandha - Google Search) - https://www.google.com/search?q=st+roberts+school+jakhalabandha&oq=&gs_lcrp=EgZj...
+    Viewport: 1536x776, Page Height: 2301
+  Page 84B4D0E8BE3938A6E9CC948AE7BE157B (St. Robert's School | Jakhalabandha, Nagaon, Assam) - http://localhost:5173/dashboard [ACTIVE]
+    Viewport: 1536x742, Page Height: 1402
+</ADDITIONAL_METADATA>
+<USER_REQUEST>
+give me a txt file about the project , its sturcturre and tech tools used till now
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-06-23T10:37:46+05:30.
+
+The user's current state is as follows:
+Active Document: d:\XAMPP\htdocs\SRS_Project\plan.md (LANGUAGE_MARKDOWN)
+Cursor is on line: 12
+Other open documents:
+- d:\XAMPP\htdocs\SRS_Project\package-lock.json (LANGUAGE_JSON)
+- d:\XAMPP\htdocs\SRS_Project\src\pages\Staff.jsx (LANGUAGE_JAVASCRIPT)
+- d:\XAMPP\htdocs\SRS_Project\src\main.jsx (LANGUAGE_JAVASCRIPT)
+- d:\XAMPP\htdocs\SRS_Project\plan.md (LANGUAGE_MARKDOWN)
+Browser State:
+  Page D4A603E8D4E2790CC6CB0F15F4D4F866 (Google Gemini) - https://gemini.google.com/app/ebb71afc9f8071a6?utm_source=app_launcher&utm_mediu...
+    Viewport: 1536x742, Page Height: 742
+  Page 84B4D0E8BE3938A6E9CC948AE7BE157B (St. Robert's School | Jakhalabandha, Nagaon, Assam) - http://localhost:5173/dashboard
+    Viewport: 1536x742, Page Height: 1383
+  Page C3EF4C84E81C1D9456451137349844B8 (internet speed test - Google Search) - https://www.google.com/search?q=internet+speed+test&oq=internet+speed+test&gs_lc... [ACTIVE]
+    Viewport: 1536x742, Page Height: 2892
+  Page DBCDA18A4EDF6420249E8601F21094C9 (React Developer Tools - Chrome Web Store) - https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadoplj...
+    Viewport: 1536x776, Page Height: 2726
+  Page 686207D667C50CE02D8D1905E1A33C0B (St. Robert's School | Jakhalabandha, Nagaon, Assam) - http://localhost:5173/
+    Viewport: 1536x742, Page Height: 4707
+  Page 3F24A93370E741257CB5E6208A6ED11D (St. Robert's School | Jakhalabandha, Nagaon, Assam) - http://localhost:5173/gallery
+    Viewport: 1536x742, Page Height: 3695
+</ADDITIONAL_METADATA>
+<USER_REQUEST>
+So lets do something new  - 
+
+Based on your current project, I would not build this as a simple PHP school website anymore.
+
+I would position it as:
+
+# SchoolOS
+
+### Student-Centric Digital School Ecosystem
+
+---
+
+# 1. Product Vision
+
+## Problem
+
+Current school systems are fragmented:
+
+```text
+ERP
+Attendance
+WhatsApp
+Google Meet
+Excel
+Report Cards
+Notices
+```
+
+Data is scattered.
+
+Parents are disconnected.
+
+Teachers perform duplicate work.
+
+---
+
+## Solution
+
+SchoolOS becomes:
+
+```text
+Single Platform
+
+Students
+Teachers
+Parents
+Principal
+Administration
+Counselors
+```
+
+Everything revolves around the student.
+
+---
+
+# 2. System Architecture
+
+```text
+                    Internet
+                         â”‚
+                         â–¼
+
+                 React Frontend
+                         â”‚
+
+     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€API Gatewayâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+     â”‚                                â”‚
+     â–¼                                â–¼
+
+ Authentication API          SchoolOS APIs
+
+     â”‚                                â”‚
+
+     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€MySQLâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+
+                File Storage
+
+                Notifications
+
+                Video Engine
+```
+
+---
+
+# 3. Recommended Tech Stack
+
+Since this is an MCA project with possible real-world deployment:
+
+## Frontend
+
+### Current
+
+```text
+React 18
+Vite
+React Router
+CSS
+```
+
+Keep it.
+
+Upgrade:
+
+```text
+React 19
+TypeScript
+React Query
+Axios
+Zustand
+Chart.js
+```
+
+---
+
+### UI
+
+```text
+CSS Variables
+Modern Design System
+Glassmorphism
+Dark Mode
+```
+
+Optional:
+
+```text
+ShadCN UI
+```
+
+---
+
+# Backend
+
+Your current:
+
+```text
+PHP APIs
+```
+
+For V2:
+
+### Option A (Recommended)
+
+```text
+Laravel 12
+PHP 8.3
+```
+
+Why?
+
+* RBAC built easier
+* Better API structure
+* Queue system
+* Notifications
+* Authentication
+
+---
+
+### Option 
+<truncated 15304 bytes>
+e
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-06-23T10:52:28+05:30.
+
+The user's current state is as follows:
+Active Document: d:\XAMPP\htdocs\SRS_Project\project_summary.txt (LANGUAGE_PLAINTEXT)
+Cursor is on line: 139
+Other open documents:
+- d:\XAMPP\htdocs\SRS_Project\project_summary.txt (LANGUAGE_PLAINTEXT)
+- d:\XAMPP\htdocs\SRS_Project\plan.md (LANGUAGE_MARKDOWN)
+- d:\XAMPP\htdocs\SRS_Project\package-lock.json (LANGUAGE_JSON)
+- d:\XAMPP\htdocs\SRS_Project\src\pages\Staff.jsx (LANGUAGE_JAVASCRIPT)
+- d:\XAMPP\htdocs\SRS_Project\src\main.jsx (LANGUAGE_JAVASCRIPT)
+Browser State:
+  Page C3EF4C84E81C1D9456451137349844B8 (internet speed test - Google Search) - https://www.google.com/search?q=internet+speed+test&oq=internet+speed+test&gs_lc...
+    Viewport: 1536x742, Page Height: 2892
+  Page DBCDA18A4EDF6420249E8601F21094C9 (React Developer Tools - Chrome Web Store) - https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadoplj...
+    Viewport: 1536x776, Page Height: 2726
+  Page 686207D667C50CE02D8D1905E1A33C0B (St. Robert's School | Jakhalabandha, Nagaon, Assam) - http://localhost:5173/
+    Viewport: 1536x742, Page Height: 4707
+  Page 3F24A93370E741257CB5E6208A6ED11D (St. Robert's School | Jakhalabandha, Nagaon, Assam) - http://localhost:5173/gallery
+    Viewport: 1536x742, Page Height: 3695
+  Page D4A603E8D4E2790CC6CB0F15F4D4F866 (Google Gemini) - https://gemini.google.com/app/ebb71afc9f8071a6?utm_source=app_launcher&utm_mediu... [ACTIVE]
+    Viewport: 1536x742, Page Height: 742
+  Page 84B4D0E8BE3938A6E9CC948AE7BE157B (St. Robert's School | Jakhalabandha, Nagaon, Assam) - http://localhost:5173/dashboard
+    Viewport: 1536x742, Page Height: 1383
+</ADDITIONAL_METADATA>
+<USER_SETTINGS_CHANGE>
+The user changed setting `Model Selection` from Gemini 3.5 Flash (Medium) to Gemini 3.1 Pro (High). No need to comment on this change if the user doesn't ask about it. If reporting what model you are, please use a human readable name instead of the exact string.
+</USER_SETTINGS_CHANGE>

@@ -155,7 +155,7 @@ export default function About() {
             <div style={styles.sectionDivider}></div>
           </div>
           <div className="glass-card" style={styles.locationCard}>
-            <div style={styles.locationInfo}>
+            <div className="responsive-flex" style={styles.locationInfo}>
               <MapPin size={24} style={{ color: 'var(--primary)', flexShrink: 0 }} />
               <div>
                 <h4 style={{ marginBottom: '8px', fontSize: '1.15rem' }}>St. Robert's School Campus</h4>

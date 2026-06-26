@@ -31,7 +31,7 @@ export default function Navbar({ auth, onLogout }) {
   return (
     <>
       {/* ─── TOP UTILITY BAR ─── */}
-      <div style={s.topBar}>
+      <div className="top-utility-bar" style={s.topBar}>
         <div className="container" style={s.topBarInner}>
           <div style={s.topSocial}>
             <a href="https://www.facebook.com/SaintRobertsHighSchool/" target="_blank" rel="noopener noreferrer" style={s.topSocialLink}><Facebook size={12} /></a>

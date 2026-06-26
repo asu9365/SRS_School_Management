@@ -160,10 +160,11 @@ img {
 
 .btn-primary {
   background-color: var(--orange);
-  color: var(--text-white);
+  color: var(--text-white) !important;
 }
 .btn-primary:hover {
   background-color: var(--orange-hover);
+  color: var(--text-white) !important;
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(240, 127, 52, 0.35);
 }
@@ -171,19 +172,20 @@ img {
 .btn-secondary {
   background-color: transparent;
   border: 2px solid var(--border);
-  color: var(--text-primary);
+  color: var(--text-primary) !important;
 }
 .btn-secondary:hover {
   border-color: var(--orange);
-  color: var(--orange);
+  color: var(--orange) !important;
 }
 
 .btn-dark {
   background-color: var(--navy);
-  color: var(--text-white);
+  color: var(--text-white) !important;
 }
 .btn-dark:hover {
   background-color: var(--navy-dark);
+  color: var(--text-white) !important;
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(12, 46, 138, 0.3);
 }
@@ -191,11 +193,11 @@ img {
 .btn-outline-light {
   background: transparent;
   border: 2px solid rgba(255,255,255,0.35);
-  color: var(--text-white);
+  color: var(--text-white) !important;
 }
 .btn-outline-light:hover {
   background: var(--text-white);
-  color: var(--navy);
+  color: var(--navy) !important;
   border-color: var(--text-white);
 }
 
@@ -252,6 +254,27 @@ img {
   }
   .section-padding { padding: 60px 0; }
   .section-header h2 { font-size: 1.8rem; }
+
+  .top-utility-bar {
+    display: none !important;
+  }
+
+  /* Stacking dashboard tabs on tablet and mobile */
+  .tab-headers {
+    flex-direction: column !important;
+    border-bottom: none !important;
+  }
+  .tab-btn {
+    width: 100% !important;
+    border-bottom: none !important;
+    border-left: 3px solid transparent !important;
+    justify-content: flex-start !important;
+    padding: 12px 20px !important;
+  }
+  .tab-btn.active {
+    border-left-color: var(--primary) !important;
+    background-color: var(--bg-muted) !important;
+  }
 }
 
 @media (max-width: 640px) {
@@ -259,6 +282,15 @@ img {
   .hero-actions-container { flex-direction: column !important; }
   .feature-cards-container { position: relative !important; bottom: 0 !important; margin-top: 50px; }
   .popular-courses-sec { padding-top: 50px !important; }
+
+  /* Shrinking gallery tabs on mobile */
+  .gallery-tabs {
+    gap: 8px !important;
+  }
+  .gallery-tab-btn {
+    padding: 6px 14px !important;
+    font-size: 0.8rem !important;
+  }
 }
 
 /* ============================================
@@ -438,4 +470,71 @@ tr:hover td { background-color: rgba(240, 127, 52, 0.03); }
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ============================================
+   TABS & DYNAMIC LAYOUTS
+   ============================================ */
+.tab-headers {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-app);
+  overflow-x: auto;
+}
+
+.tab-btn {
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 16px 24px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: var(--primary);
+}
+
+.tab-btn.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+/* Gallery Filter Tabs */
+.gallery-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.gallery-tab-btn {
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.gallery-tab-btn:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.gallery-tab-btn.active {
+  background: var(--primary) !important;
+  color: white !important;
+  border-color: var(--primary) !important;
 }

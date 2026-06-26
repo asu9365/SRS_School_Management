@@ -68,17 +68,12 @@ export default function Gallery() {
         </div>
 
         {/* Tab Filters */}
-        <div style={styles.tabsContainer}>
+        <div className="gallery-tabs">
           {categories.map(tab => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              style={{
-                ...styles.tabBtn,
-                backgroundColor: activeTab === tab.id ? 'var(--primary)' : 'var(--bg-surface)',
-                color: activeTab === tab.id ? 'white' : 'var(--text-secondary)',
-                borderColor: activeTab === tab.id ? 'var(--primary)' : 'var(--border)'
-              }}
+              className={`gallery-tab-btn ${activeTab === tab.id ? 'active' : ''}`}
             >
               {tab.label}
             </button>
